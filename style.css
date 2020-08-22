@@ -34,4 +34,14 @@ article {
   height: 40vh;
   background: url("./images/main-photo2.jpg") center/cover no-repeat border-box;
   background-size: cover;
+  position: relative;
+}
+
+figure h1 {
+  position: absolute;
+  bottom: 9%;
+  left: 5%;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
 }
