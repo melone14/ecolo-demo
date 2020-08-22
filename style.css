@@ -10,9 +10,10 @@ czarny: #1d1d1b
 }
 
 body {
-  background: rgb(128, 115, 115);
+  /* background: rgb(128, 115, 115); */
+  background: #d6c8ad;
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: #ffffff;
 }
 
 header {
@@ -35,11 +36,15 @@ nav {
   fill: #1b1b1b;
 }
 
-article {
+section {
   height: 40vh;
   background: url("./images/main-photo2.jpg") center/cover no-repeat border-box;
   background-size: cover;
   position: relative;
+}
+
+#content {
+  height: 60vh;
 }
 
 figure h1 {
@@ -47,6 +52,127 @@ figure h1 {
   bottom: 9%;
   left: 5%;
   font-size: 1.6rem;
-  color: #ffffff;
   text-shadow: 0 0 10px #000;
+}
+
+#numbers {
+  height: 60vh;
+  background: #c5b598;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+article p {
+  display: inline-block;
+  width: 50vw;
+}
+
+.main-footer {
+  width: 100%;
+  color: #1d1d1b;
+}
+
+.main-footer__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+}
+
+.main-footer__logo {
+  border: 1px solid black;
+  padding: 10vh 2vw;
+}
+
+.main-footer__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.main-footer-list {
+  list-style: none;
+}
+
+.main-footer-list__item-main {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  padding-bottom: 0.9rem;
+}
+
+.main-footer-list__item {
+  padding-bottom: 0.5rem;
+}
+
+.main-footer-list__item a {
+  text-decoration: none;
+  color: #1d1d1b;
+}
+
+.main-footer-list__item a:hover,
+.main-footer-list__item a:active {
+  font-size: 1.05rem;
+}
+
+.socials-facebook a:hover,
+.socials-facebook a:active {
+  color: #2d88ff;
+}
+
+.socials-twitter a:hover,
+.socials-twitter a:active {
+  color: rgba(29, 161, 242, 1);
+}
+
+.socials-instagram a:hover,
+.socials-instagram a:active {
+  background: -webkit-linear-gradient(
+    right,
+    #515bd4,
+    #8134af,
+    #dd2a7b,
+    #feda77,
+    #f58529
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.socials-youtube a:hover,
+.socials-youtube a:active {
+  color: #c4302b;
+}
+
+.main-footer__rights {
+  color: rgb(112, 112, 112);
+  padding: 1rem;
+  padding-top: 3rem;
+  margin: 0 auto;
+  width: 30vw;
+}
+
+@media (max-width: 42.5rem) {
+  .main-footer__lists {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 1rem;
+  }
+
+  .main-footer__rights {
+    margin: 0;
+    width: 100vw;
+  }
 }
