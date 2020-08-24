@@ -55,14 +55,69 @@ figure h1 {
   text-shadow: 0 0 10px #000;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form input,
+select {
+  width: 60%;
+  height: 2rem;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+}
+
+.rooms-bathrooms {
+  border: 1px solid red;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+}
+
+.rooms-bathrooms button {
+  width: 30%;
+  height: 100%;
+}
+
 #numbers {
-  height: 60vh;
+  height: 120vh;
   background: #c5b598;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
+}
+
+#numbers div {
+  /* border: 1px solid red; */
+  height: 33vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+#numbers div h1 {
+  /* border: 1px solid yellow; */
+  width: 80%;
+  padding: 5px 5px 15px 5px;
+  font-size: 40px;
+}
+
+#numbers div svg {
+  /* border: 1px solid green; */
+}
+#numbers div p {
+  /* border: 1px solid blue; */
+  width: 50%;
+  padding: 10px;
+  font-weight: bold;
 }
 
 article p {
