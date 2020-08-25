@@ -16,10 +16,16 @@ body {
   color: #ffffff;
 }
 
+#siteWrapper {
+  position: relative;
+}
+
 header {
-  background-color: rgba(255, 255, 255, 1);
-  height: 10vh;
+  background-color: transparent;
+  height: 15vh;
   width: 100%;
+  position: absolute;
+  z-index: 2;
 }
 
 nav {
@@ -33,7 +39,39 @@ nav {
 }
 
 .hamburger-class {
-  fill: #1b1b1b;
+  fill: #ffffff;
+}
+
+.thumbnail {
+  height: 60vh;
+  background-image: url("./images/figure.jpg");
+  background-repeat: no-repeat;
+  background-position: 65% 50%;
+  background-size: cover;
+  position: relative;
+}
+
+.thumbnail svg {
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  z-index: 2;
+}
+
+.thumbnail p {
+  background: transparent;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  z-index: 3;
+  font-family: inherit;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
 }
 
 section {
