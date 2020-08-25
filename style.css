@@ -21,10 +21,12 @@ body {
 }
 
 header {
+  /* border: 1px solid red; */
   background-color: transparent;
   height: 15vh;
   width: 100%;
   position: absolute;
+  top: 0.5rem;
   z-index: 2;
 }
 
@@ -61,10 +63,16 @@ nav {
 .thumbnail p {
   background: transparent;
   position: absolute;
-  left: 10%;
-  top: 50%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
   z-index: 3;
-  font-family: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  padding: 1rem;
+  /* border: 1px solid red; */
+  font-weight: 600;
+  text-shadow: 0 0 10px #000;
 }
 
 .color-overlay {
@@ -74,27 +82,45 @@ nav {
   position: absolute;
 }
 
-section {
-  height: 40vh;
+.house {
+  height: 42vh;
   background: url("./images/main-photo2.jpg") center/cover no-repeat border-box;
+  background-size: cover;
+  position: relative;
+}
+
+.comercial-cleaning {
+  height: 60vh;
+  background: url("./images/komercyjne1.jpg") center/cover no-repeat border-box;
   background-size: cover;
   position: relative;
 }
 
 figure h1 {
   position: absolute;
-  bottom: 9%;
-  left: 5%;
-  font-size: 1.6rem;
+  bottom: 5%;
+  left: 4%;
+  font-size: 2rem;
   text-shadow: 0 0 10px #000;
 }
 #content {
-  height: 95vh;
-  padding: 1rem;
+  height: 200vh;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
+
+#content p {
+  /* border: 1px solid red; */
+  width: 100%;
+  text-align: center;
+}
+
+#content ul {
+  /* border: 1px solid red; */
+  width: 90%;
 }
 
 #content form span {
@@ -126,19 +152,19 @@ form {
 form input,
 select,
 option {
-  width: 70%;
+  width: 83%;
   height: 2.4rem;
   border: 1px solid #d1d1d1;
   border-radius: 5px;
   outline: none;
   font-size: 1rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 0 0.5rem;
 }
 
 .rooms-bathrooms {
   border: 1px solid #d1d1d1;
-  width: 70%;
+  width: 83%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -216,6 +242,27 @@ option {
 article p {
   display: inline-block;
   width: 50vw;
+}
+
+.house-cleaning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.house-cleaning p {
+  width: 90%;
+  text-align: center;
+}
+
+.house-cleaning ul {
+  width: 70%;
+}
+
+.house-cleaning:first-child {
+  padding-top: 1rem;
 }
 
 .main-footer {
