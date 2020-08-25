@@ -43,10 +43,6 @@ section {
   position: relative;
 }
 
-#content {
-  height: 60vh;
-}
-
 figure h1 {
   position: absolute;
   bottom: 9%;
@@ -54,34 +50,86 @@ figure h1 {
   font-size: 1.6rem;
   text-shadow: 0 0 10px #000;
 }
-
-form {
+#content {
+  height: 95vh;
+  padding: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
 
-form input,
-select {
-  width: 60%;
-  height: 2rem;
-  border: 0.5px solid gray;
+#content form span {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem 0 0.5rem 0;
+  /* border: 1px solid green; */
+}
+
+#content form #content-title {
+  /* color: green; */
+  display: inline-block;
+  padding: 0 0 0.5rem 0;
+}
+
+form {
+  width: 98%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #1b1b1b;
   border-radius: 5px;
+  background: #c5b598;
+}
+
+form input,
+select,
+option {
+  width: 70%;
+  height: 2.4rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0 0.5rem;
 }
 
 .rooms-bathrooms {
-  border: 1px solid red;
-  width: 60%;
+  border: 1px solid gray;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 2rem;
+  height: 2.4rem;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .rooms-bathrooms button {
-  width: 30%;
+  width: 40%;
   height: 100%;
+  background: #ffffff;
+  border: none;
+  border-left-style: 1px solid gray;
+  outline: none;
+  color: #1b1b1b;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.rooms-bathrooms span {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  color: #1b1b1b;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #numbers {
@@ -92,6 +140,7 @@ select {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  padding: 1rem 0;
 }
 
 #numbers div {
@@ -110,9 +159,6 @@ select {
   font-size: 40px;
 }
 
-#numbers div svg {
-  /* border: 1px solid green; */
-}
 #numbers div p {
   /* border: 1px solid blue; */
   width: 50%;
