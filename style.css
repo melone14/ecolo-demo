@@ -83,14 +83,14 @@ nav {
 }
 
 .house {
-  height: 42vh;
+  height: 44vh;
   background: url("./images/main-photo2.jpg") center/cover no-repeat border-box;
   background-size: cover;
   position: relative;
 }
 
 .comercial-cleaning {
-  height: 60vh;
+  height: 70vh;
   background: url("./images/komercyjne1.jpg") center/cover no-repeat border-box;
   background-size: cover;
   position: relative;
